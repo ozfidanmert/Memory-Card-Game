@@ -4,7 +4,7 @@
   <p style="color:#2ecc71;">
     I developed a responsive Memory Card Game using HTML, CSS, and JavaScript.
   </p>
-  <a href="https://yourusername.github.io/memory-card-game">
+  <a href="https://ozfidanmert.github.io/Memory-Card-Game">
     <img src="https://img.shields.io/badge/Live%20Demo-Click%20Here-brightgreen" alt="Live Demo">
   </a>
 </div>
@@ -30,23 +30,7 @@
   <li>Restart Option: Easily restart the game at any point to play again.</li>
 </ul>
 
-## Live Demo
-
-Check out the live demo of the game by clicking the badge below:
-
-<div align="center">
-  <a href="https://yourusername.github.io/memory-card-game">
-    <img src="https://img.shields.io/badge/Live%20Demo-Click%20Here-brightgreen" alt="Live Demo">
-  </a>
-</div>
-
-## Installation
-
-To run this project locally, follow these steps:
-
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/yourusername/memory-card-game.git
 
 
-https://ozfidanmert.github.io/Memory-Card-Game/
+
+
