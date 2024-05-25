@@ -1,0 +1,172 @@
+
+/* Player1 PLAY GAME */
+
+.wrapper{
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+    height: 550px;
+    width: 400px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    padding: 25px 25px 155px 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.wrapper.active{
+    display: block;
+    opacity: 1;
+    pointer-events: all;
+}
+.cards,
+.card,
+.view{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+ 
+}
+
+
+.cards{
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card .back-view img{
+    max-width: 45px;
+}
+.cards .card{
+    cursor: pointer;
+    height: 70px;
+    width: 70px;
+    position: relative;
+    perspective: 800px;
+}
+.card.shake{
+    animation: shake 0.35s ease-in-out;
+}
+@keyframes shake{
+    0%, 100%{
+        transform: translateX(0);
+    }
+    20%{
+        transform: translateX(-13px);
+    }
+    40%{
+        transform: translateX(13px);
+    }
+    60%{
+        transform: translateX(-8px);
+    }
+    80%{
+        transform: translateX(8px);
+    }
+}
+
+.cards .card .view{
+    background: #ffff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.4s linear;
+    backface-visibility: hidden;
+    pointer-events: none;
+    user-select: none;
+}
+.card .back-view{
+    transform: rotateY(-180deg);
+}
+.card.flip .back-view{
+    transform: rotateY(0);
+}
+.card.flip .front-view{
+    transform: rotateY(180deg);
+}
+
+.card .bx{
+    font-size: 40px;
+    color: #6563ff; 
+}
+
+.wrapper-header{
+    position: absolute;
+    /* top: 80%; */
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper-header .header{
+    background: #f2f0f0;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.150);
+    align-items: center;
+    width: 300px;
+    height: 40px;
+    border-radius: 7px;
+    padding: 6px;
+}
+
+.wrapper-header .alerts{ 
+    width: 350px;   
+    margin: 20px 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper-header .alerts .alert{
+    background: #4e4bf9;
+    color: #ffff;
+    font-size: 17px;
+    border-radius: 7px;
+    padding: 11px 10px;
+    letter-spacing: 0.7px;
+}
+
+.header .timer{
+    display: flex;
+    font-size: 18px;
+    letter-spacing: 0.7px;
+}
+.header .timer .time-sec{
+    margin-left: 4px;
+    font-weight: 600;
+}
+.header .flips{
+    display: flex;
+    letter-spacing: 0.7px;
+    font-size: 18px;
+}
+.header .flips .flips-sec{
+    margin-left: 4px;
+    font-weight: 600;
+}
+.header .refresh{
+    display: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: 2px solid rgb(57, 57, 250);
+    outline: none;
+    color: rgb(57, 57, 250);
+    background: #f8f8f8;
+    cursor: pointer;
+    font-size: 15px;
+}
+.header .refresh:hover{
+    background: rgb(57, 57, 250);
+    color: #ffff;
+    font-size: 15px;
+    font-weight: 600;
+}
+

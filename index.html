@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Game</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="player1.css">
+    <link rel="stylesheet" href="player2.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <div class="info-box">
+            <div class="info-title">
+                <h1>Memory Card Game Welcome</h1>
+            </div>
+
+            <div class="info-list">
+                <div class="info-list-title">
+                    <h1>One Player</h1>
+                </div>
+                <div class="info"><i class='bx bxs-right-arrow'></i>
+                    The game is played solo and implements a level system. </div>
+                <div class="info"><i class='bx bxs-right-arrow'></i>
+                    As you progress through levels, the game
+                    becomes more challenging.</div>
+                <div class="info"><i class='bx bxs-right-arrow'></i>
+                    Within the specified seconds, you must find pairs of all cards!</div>
+                <div class="info"><i class='bx bxs-right-arrow'></i>
+                    If you can't find pairs for all cards within the given time, the game restarts from the beginning.
+                </div>
+
+
+                <div class="info-list-title">
+                    <h1>Two Player</h1>
+                </div>
+                <div class="info"><i class='bx bxs-right-arrow'></i>
+                    In the two-player mode, there is no time limit. The player who finds the most pairs of
+                    cards wins!</div>
+            </div>
+
+            <div class="buttons">
+                <button class="one-player btn">Play One Player</button>
+                <button class="two-player btn">Play Two Player</button>
+            </div>
+        </div>
+
+
+        <!-- Player1 -->
+        <div class="wrapper">
+            <ul class="cards">
+
+                <li class="card">
+                    <div class="view front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="view back-view">
+                        <img src="img/img-1.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="view front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="view back-view">
+                        <img src="img/img-2.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="view front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="view back-view">
+                        <img src="img/img-3.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="view front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="view back-view">
+                        <img src="img/img-4.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="view front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="view back-view">
+                        <img src="img/img-5.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="view front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="view back-view">
+                        <img src="img/img-6.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="view front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="view back-view">
+                        <img src="img/img-7.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="view front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="view back-view">
+                        <img src="img/img-8.png" alt="card-img">
+                    </div>
+                </li>
+
+                <li class="card">
+                    <div class="view front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="view back-view">
+                        <img src="img/img-1.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="view front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="view back-view">
+                        <img src="img/img-2.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="view front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="view back-view">
+                        <img src="img/img-3.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="view front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="view back-view">
+                        <img src="img/img-4.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="view front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="view back-view">
+                        <img src="img/img-5.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="view front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="view back-view">
+                        <img src="img/img-6.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="view front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="view back-view">
+                        <img src="img/img-7.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="view front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="view back-view">
+                        <img src="img/img-8.png" alt="card-img">
+                    </div>
+                </li>
+            </ul>
+
+
+            <div class="wrapper-header">
+                <div class="header">
+                    <div class="timer">
+                        <div class="time-text">Time: </div>
+                        <div class="time-sec"></div>
+                    </div>
+                    <div class="flips">
+                        <div class="flips-text">Flips: </div>
+                        <div class="flips-sec">0</div>
+                    </div>
+
+                    <button class="refresh">Refresh</button>
+                </div>
+
+                <div class="alerts">
+                    <div class="alert">Kartların çiftini bul! Süre devam ediyor...</div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <!--Player2-->
+        <div class="wrapperTwo">
+            <ul class="cardsTwo">
+
+                <li class="cardTwo">
+                    <div class="viewTwo front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="viewTwo back-view">
+                        <img src="img/img-1.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="cardTwo">
+                    <div class="viewTwo front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="viewTwo back-view">
+                        <img src="img/img-2.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="cardTwo">
+                    <div class="viewTwo front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="viewTwo back-view">
+                        <img src="img/img-3.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="cardTwo">
+                    <div class="viewTwo front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="viewTwo back-view">
+                        <img src="img/img-4.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="cardTwo">
+                    <div class="viewTwo front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="viewTwo back-view">
+                        <img src="img/img-5.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="cardTwo">
+                    <div class="viewTwo front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="viewTwo back-view">
+                        <img src="img/img-6.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="cardTwo">
+                    <div class="viewTwo front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="viewTwo back-view">
+                        <img src="img/img-7.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="cardTwo">
+                    <div class="viewTwo front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="viewTwo back-view">
+                        <img src="img/img-8.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="cardTwo">
+                    <div class="viewTwo front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="viewTwo back-view">
+                        <img src="img/img-9.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="cardTwo">
+                    <div class="viewTwo front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="viewTwo back-view">
+                        <img src="img/img-10.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="cardTwo">
+                    <div class="viewTwo front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="viewTwo back-view">
+                        <img src="img/img-11.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="cardTwo">
+                    <div class="viewTwo front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="viewTwo back-view">
+                        <img src="img/img-12.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="cardTwo">
+                    <div class="viewTwo front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="viewTwo back-view">
+                        <img src="img/img-13.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="cardTwo">
+                    <div class="viewTwo front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="viewTwo back-view">
+                        <img src="img/img-14.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="cardTwo">
+                    <div class="viewTwo front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="viewTwo back-view">
+                        <img src="img/img-15.png" alt="card-img">
+                    </div>
+                </li>
+
+
+
+                <li class="cardTwo">
+                    <div class="viewTwo front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="viewTwo back-view">
+                        <img src="img/img-1.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="cardTwo">
+                    <div class="viewTwo front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="viewTwo back-view">
+                        <img src="img/img-2.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="cardTwo">
+                    <div class="viewTwo front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="viewTwo back-view">
+                        <img src="img/img-3.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="cardTwo">
+                    <div class="viewTwo front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="viewTwo back-view">
+                        <img src="img/img-4.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="cardTwo">
+                    <div class="viewTwo front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="viewTwo back-view">
+                        <img src="img/img-5.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="cardTwo">
+                    <div class="viewTwo front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="viewTwo back-view">
+                        <img src="img/img-6.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="cardTwo">
+                    <div class="viewTwo front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="viewTwo back-view">
+                        <img src="img/img-7.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="cardTwo">
+                    <div class="viewTwo front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="viewTwo back-view">
+                        <img src="img/img-8.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="cardTwo">
+                    <div class="viewTwo front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="viewTwo back-view">
+                        <img src="img/img-9.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="cardTwo">
+                    <div class="viewTwo front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="viewTwo back-view">
+                        <img src="img/img-10.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="cardTwo">
+                    <div class="viewTwo front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="viewTwo back-view">
+                        <img src="img/img-11.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="cardTwo">
+                    <div class="viewTwo front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="viewTwo back-view">
+                        <img src="img/img-12.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="cardTwo">
+                    <div class="viewTwo front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="viewTwo back-view">
+                        <img src="img/img-13.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="cardTwo">
+                    <div class="viewTwo front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="viewTwo back-view">
+                        <img src="img/img-14.png" alt="card-img">
+                    </div>
+                </li>
+                <li class="cardTwo">
+                    <div class="viewTwo front-view">
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="viewTwo back-view">
+                        <img src="img/img-15.png" alt="card-img">
+                    </div>
+                </li>
+            </ul>
+
+
+            <div class="wrapper-headerTwo">
+                <div class="headerTwo">
+                    <div class="players">
+                        <div class="player1">Player1: 0</div>
+                        <div class="time">00</div>
+                        <div class="player2">Player2: 0</div>
+                    </div>
+
+                    <!-- <button class="refreshTwo">Refresh</button> -->
+                </div>
+
+                <div class="alertsTwo">
+                    <div class="alertTwo">Kartların en fazla çiftini bulan kazanır!</div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+</body>
+
+</html>

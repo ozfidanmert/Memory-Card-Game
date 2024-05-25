@@ -1,0 +1,206 @@
+/* Player2 PLAY GAME */
+
+.wrapperTwo {
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+    height: 600px;
+    width: 650px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    padding: 25px 25px 170px 25px;
+
+}
+
+.wrapperTwo.active {
+    display: block;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.cardsTwo,
+.cardTwo,
+.viewTwo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 19px;
+
+}
+
+.cardsTwo {
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cardTwo .back-view img {
+    max-width: 45px;
+}
+
+.cardsTwo .cardTwo {
+    cursor: pointer;
+    height: 70px;
+    width: 70px;
+    position: relative;
+    perspective: 800px;
+}
+
+.cardTwo.shake {
+    animation: shake 0.35s ease-in-out;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-13px);
+    }
+
+    40% {
+        transform: translateX(13px);
+    }
+
+    60% {
+        transform: translateX(-8px);
+    }
+
+    80% {
+        transform: translateX(8px);
+    }
+}
+
+.cardsTwo .cardTwo .viewTwo {
+    background: #ffff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.4s linear;
+    backface-visibility: hidden;
+    pointer-events: none;
+    user-select: none;
+}
+
+.cardTwo .back-view {
+    transform: rotateY(-180deg);
+}
+
+.cardTwo.flip .back-view {
+    transform: rotateY(0);
+}
+
+.cardTwo.flip .front-view {
+    transform: rotateY(180deg);
+}
+
+.cardTwo .bx {
+    font-size: 40px;
+    color: #6563ff;
+}
+
+.wrapper-headerTwo {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper-headerTwo .headerTwo {
+    background: #f2f0f0;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.150);
+    width: 300px;
+    height: 40px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerTwo .players {
+    display: flex;
+    flex-direction: row;
+    /* Players kutularını yatay olarak sırala */
+    justify-content: space-between;
+    /* Yatayda aralarında boşluk olacak şekilde hizala */
+    align-items: center;
+    font-size: 18px;
+    letter-spacing: 0.7px;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.headerTwo .players .time {
+    font-weight: 600;
+}
+
+
+.wrapper-headerTwo .alertsTwo {
+    width: 350px;
+    margin: 20px 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-headerTwo .alertsTwo .alertTwo {
+    background: #4e4bf9;
+    color: #ffff;
+    font-size: 17px;
+    border-radius: 7px;
+    padding: 11px 10px;
+    letter-spacing: 0.7px;
+}
+
+
+
+
+.headerTwo .refreshTwo {
+    display: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: 2px solid rgb(57, 57, 250);
+    outline: none;
+    color: rgb(57, 57, 250);
+    background: #f8f8f8;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.headerTwo .refreshTwo:hover {
+    background: rgb(57, 57, 250);
+    color: #ffff;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+
+@media screen and (max-width: 640px) {
+    .wrapperTwo {
+        height: 100vh;
+        width: 400px;
+        padding: 15px 15px 150px 15px;
+    }
+
+    .cardsTwo,
+    .cardTwo,
+    .viewTwo {
+        gap: 5px;
+
+    }
+}
