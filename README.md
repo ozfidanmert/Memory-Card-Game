@@ -3,7 +3,7 @@
 
 <!-- Live Demo and Badges -->
 <p align="center">
-    <a href="[YOUR_LIVE_DEMO_URL](https://ozfidanmert.github.io/Memory-Card-Game/)">
+    <a href="https://ozfidanmert.github.io/Memory-Card-Game/">
         <img src="https://img.shields.io/badge/Live-Demo-brightgreen" alt="Live Demo">
     </a>
 </p>
