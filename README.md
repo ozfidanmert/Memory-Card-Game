@@ -15,7 +15,7 @@
 The game offers two modes:
 
 1. **Single-Player Mode:** Test your memory against the clock and try to beat your best time.
-2. **Two-Player Mode:** Compete with a friend to see who can match the most pairs.
+2. **Two-Player Mode:** Compete with a friend to see who can match the most pairs
 
 <!-- Features -->
 <h2>Features</h2>
