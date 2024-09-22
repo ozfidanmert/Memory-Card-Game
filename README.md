@@ -10,7 +10,7 @@
 
 <!-- Project Description -->
 <h2>Project Description</h2>
-<p>This project is a **Memory Card Game** developed using **HTML**, **CSS**, and **JavaScript**. The game is designed to test and improve memory skills in an entertaining way. It features a fully **responsive** design, ensuring a seamless experience across various devices and screen sizes.</p>
+<p>This project is a **Memory Card Game** developed using **HTML**, **CSS**, and **JavaScript**. The game is designed to test and improve memory skills in an entertaining way. It features a fully **responsive** design, ensuring a seamless experience across various devices and screen sizes</p>
 
 The game offers two modes:
 
